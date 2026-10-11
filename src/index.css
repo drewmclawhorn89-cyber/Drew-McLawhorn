@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-insta {
+    font-family: 'Grand Hotel', cursive;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Instagram story gradient border animation */
+@keyframes spin-gradient {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.story-gradient {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.story-gradient-seen {
+  background: #dbdbdb;
+}
+
+.dark .story-gradient-seen {
+  background: #363636;
+}
+
+/* Photo Filter Presets for Create Post */
+.filter-normal { filter: none; }
+.filter-clarendon { filter: contrast(1.2) saturate(1.25); }
+.filter-gingham { filter: brightness(1.05) hue-rotate(-10deg); }
+.filter-juno { filter: contrast(1.15) saturate(1.4) sepia(0.2); }
+.filter-lark { filter: contrast(0.9) brightness(1.1) saturate(1.1); }
+.filter-ludwig { filter: contrast(1.05) saturate(1.05) sepia(0.15); }
+.filter-slumber { filter: saturate(0.66) brightness(1.05) sepia(0.35); }
+.filter-valencia { filter: contrast(1.08) brightness(1.08) sepia(0.08); }
+.filter-noir { filter: grayscale(1) contrast(1.3); }

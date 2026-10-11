@@ -1,0 +1,6 @@
+{
+  "name": "Instagram",
+  "description": "A full-featured Instagram experience with feed, stories viewer, reels, explore discovery, interactive filters, direct messages, and profile management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
